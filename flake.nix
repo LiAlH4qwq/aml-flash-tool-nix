@@ -43,7 +43,7 @@
             default = config.flake.overlays.aml-flash-tool;
             aml-flash-tool = (
               _: prev:
-              withSystem prev.hostPlatform.system (
+              withSystem prev.stdenv.hostPlatform.system (
                 { config, ... }: {
                   aml-flash-tool = config.packages.aml-flash-tool;
                 }
