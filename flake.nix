@@ -15,7 +15,7 @@
 
         flake = {
           nixosModules = {
-            default = config.nixosModules.aml-flash-tool;
+            default = config.flake.nixosModules.aml-flash-tool;
             aml-flash-tool =
               {
                 config,
@@ -40,7 +40,7 @@
           };
 
           overlays = {
-            default = config.overlays.aml-flash-tool;
+            default = config.flake.overlays.aml-flash-tool;
             aml-flash-tool = (
               _: prev:
               withSystem prev.hostPlatform.system (
