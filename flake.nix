@@ -34,7 +34,7 @@
 
                   services.udev.packages = with pkgs; [ aml-flash-tool ];
 
-                  nixpkgs.overlays = [ flake.config.overlays.aml-flash-tool ];
+                  nixpkgs.overlays = [ flake.config.flake.overlays.aml-flash-tool ];
                 };
               };
           };
