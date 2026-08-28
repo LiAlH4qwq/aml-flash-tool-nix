@@ -8,7 +8,7 @@ It exposes `packages.<system>.aml-flash-tool` package, also aliased as `packages
 
 It also exposes a `overlays.aml-flash-tool`, aliased as `overlays.default`, integrating above package into `pkgs` as `pkgs.aml-flash-tool`.
 
-For NixOS, it has a `nixosModules.aml-flash-tool`, aliased as `nixosModules.default`, doing all above things for you. All you need is set import this module and ser `programs.aml-flash-tool.enable = true;`.
+For NixOS, it has a `nixosModules.aml-flash-tool`, aliased as `nixosModules.default`, doing all above things for you. All you need is set import this module and set `programs.aml-flash-tool.enable = true;`, then add your user to `amlusers` group.
 
 ## License
 
