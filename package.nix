@@ -15,7 +15,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   src = fetchFromGitHub {
     owner = "antoxa78";
     repo = "Amlogic-Tool-for-Linux";
-    tag = finalAttrs.version;
+    tag = "v${finalAttrs.version}";
     hash = "sha256-Us0nc6hLxF9fT4T9xesHnElBg26OaNBIOZhZUgkfV80=";
   };
 
